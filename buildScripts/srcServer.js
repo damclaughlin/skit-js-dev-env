@@ -21,6 +21,8 @@ app.get('/', function(req,resp) {
 
 app.listen(port,function(err) {
 	if(err) {
+		/* eslint-disable no-console */
+        // The above line will cause elslint to ignore the following console.log
 		console.log(err);
 	} else {
 		open('http://localhost:' + port);
